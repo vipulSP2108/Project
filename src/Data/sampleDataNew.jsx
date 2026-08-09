@@ -1,14 +1,14 @@
-import RentHouse from '../assets/RentHouse.png';
-import Project from '../assets/Project.png';
+import RentHouse from '../assets/projects/RentHouse.png';
+import Project from '../assets/projects/Project.png';
 
-import Colab from '../assets/Colab.png';
-import SparshBhashi from '../assets/SparshBhashi.png';
-import OutsIIT from '../assets/OutsIIT.png';
-import CitiesDevGame from '../assets/Cities.png';
-// import RentHouse from '../assets/RentHouse.png';
-import MoboDashboard from '../assets/MoboDashboard.png';
-import OnlineBubbleGame from '../assets/OnlineBubbleGame.png';
-import Suduko from '../assets/Suduko.png';
+import Colab from '../assets/projects/Colab.png';
+import SparshBhashi from '../assets/projects/SparshBhashi.png';
+import OutsIIT from '../assets/projects/OutsIIT.png';
+import CitiesDevGame from '../assets/projects/Cities.png';
+// import RentHouse from '../assets/projects/RentHouse.png';
+import MoboDashboard from '../assets/projects/MoboDashboard.png';
+import OnlineBubbleGame from '../assets/projects/OnlineBubbleGame.png';
+import Suduko from '../assets/projects/Suduko.png';
 
 export const sampleDataNew = [
   // {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaArrowUp, FaUser } from 'react-icons/fa6';
 import './Navbar.css';
-import logo from '../assets/logo.png';
+import logo from '../assets/misc/logo.png';
 import { MagneticIcon } from './MagneticIcon';
 import { FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa6';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // We import the single SVG sprite that contains all icons
-import sprite from '../assets/images/sprite.svg?url';
+import sprite from '../assets/skills/sprite.svg?url';
 
 // Export the sprite URL so components can use it
 export const spriteUrl = sprite;

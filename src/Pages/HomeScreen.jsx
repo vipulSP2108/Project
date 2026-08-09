@@ -24,13 +24,13 @@ import History from "./History";
 import Projects2 from "./Projects2";
 import ProjectDetails from "./ProjectDetails";
 
-import RentHouse from '../assets/RentHouse.png';
-import Project from '../assets/Project.png';
+import RentHouse from '../assets/projects/RentHouse.png';
+import Project from '../assets/projects/Project.png';
 
 
-import OutsIIT from '../assets/OutsIIT.png';
-import CitiesDevGame from '../assets/Cities.png';
-import ChildSafetyMonitoring from '../assets/Cities.png';
+import OutsIIT from '../assets/projects/OutsIIT.png';
+import CitiesDevGame from '../assets/projects/Cities.png';
+import ChildSafetyMonitoring from '../assets/projects/Cities.png';
 import ConnectSection from "../Components/ConnectSection";
 
 import { sampleDataNew } from '../Data/sampleDataNew';

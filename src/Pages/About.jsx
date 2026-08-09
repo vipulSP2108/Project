@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react'
 import '../App.css';
-import imageMy from '../assets/My4.jpg';
-import html from '../assets/images/html-5-logo-svg-1.svg';
-import javascriptweb from '../assets/images/javascript-1.svg';
-import react from '../assets/images/react-native.svg';
-import tailwindcss from '../assets/images/tailwindcss.svg';
+import imageMy from '../assets/profile/My4.jpg';
+import html from '../assets/skills/html-5-logo-svg-1.svg';
+import javascriptweb from '../assets/skills/javascript-1.svg';
+import react from '../assets/skills/react-native.svg';
+import tailwindcss from '../assets/skills/tailwindcss.svg';
 import Scroller from './Scroller';
 import gsap from "gsap";
 

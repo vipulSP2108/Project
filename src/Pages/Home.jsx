@@ -154,7 +154,7 @@ export default function Home() {
 
 
 // import React from 'react';
-// import gridSvg from '../assets/grid.svg'; // Adjust the path if necessary
+// import gridSvg from '../assets/misc/grid.svg'; // Adjust the path if necessary
 
 // const Home = () => {
 //   const divStyle = {

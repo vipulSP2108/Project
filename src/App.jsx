@@ -48,14 +48,13 @@ export default function App() {
 
   return (
     <HashRouter>
-      <div style={{ fontFamily: "Zain", userSelect: "none" }} className=' overscroll-none z-0 cursor-none w-full text-2xl text-white bg-[#171C24] ' >
+      <div style={{ fontFamily: "Zain", userSelect: "none" }} className=' overscroll-none z-0 cursor-none w-full text-2xl text-white bg-[#111111] ' >
 
-        {isTabletOrLaptop  ? null :
-          <div style={{ background: `linear-gradient(0deg, transparent 5%, #171C24 95%)` }} className="z-40 fixed h-36 md:h-20 w-full " />
-        }
-        {isTabletOrLaptop ? null :
-          <div style={{ background: `linear-gradient(0deg, transparent 5%, #171C24 95%)` }} className="z-40 fixed bottom-0 rotate-180 h-36 md:h-20 w-full " />
-        }
+        {/* Global Vignette Edges (z-index highest, pointer-events-none so it doesn't block clicks) */}
+        <div className="fixed top-0 bottom-0 left-0 w-12 md:w-48 bg-gradient-to-r from-[#111111] to-transparent z-[9999] pointer-events-none" />
+        <div className="fixed top-0 bottom-0 right-0 w-12 md:w-48 bg-gradient-to-l from-[#111111] to-transparent z-[9999] pointer-events-none" />
+        <div className="fixed top-0 left-0 right-0 h-12 md:h-32 bg-gradient-to-b from-[#111111] to-transparent z-[9999] pointer-events-none" />
+        <div className="fixed bottom-0 left-0 right-0 h-12 md:h-32 bg-gradient-to-t from-[#111111] to-transparent z-[9999] pointer-events-none" />
 
         <GridBg />
         {isTabletOrLaptop && <Cursor />}

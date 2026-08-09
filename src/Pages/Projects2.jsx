@@ -1,12 +1,12 @@
 import React, { useContext } from 'react'
 import Work from './Work';
-import imageMy from '../assets/My.jpg';
+import imageMy from '../assets/profile/My.jpg';
 
-import SparshBhashi from '../assets/SparshBhashi.png';
-import OutsIIT from '../assets/OutsIIT.png';
-import Cities from '../assets/Cities.png';
-import RentHouse from '../assets/RentHouse.png';
-import MoboDashboard from '../assets/MoboDashboard.png';
+import SparshBhashi from '../assets/projects/SparshBhashi.png';
+import OutsIIT from '../assets/projects/OutsIIT.png';
+import Cities from '../assets/projects/Cities.png';
+import RentHouse from '../assets/projects/RentHouse.png';
+import MoboDashboard from '../assets/projects/MoboDashboard.png';
 
 import { sampleDataNew } from '../Data/sampleDataNew';
 import './Home.css';

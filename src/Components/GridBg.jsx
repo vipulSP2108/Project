@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import './GridBg.css';
-import gridSvg from '../assets/grid.svg';
+import gridSvg from '../assets/misc/grid.svg';
 import { GlobalStateContext } from '../Context/GlobalStateProvider';
 
 

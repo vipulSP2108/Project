@@ -7,7 +7,7 @@ export default function NavbarBottom() {
 
   return (
     <div 
-      className="fixed z-50 bottom-8 right-4 md:bottom-12 md:right-14 rounded-2xl cursor-pointer"
+      className="fixed z-[10000] bottom-8 right-4 md:bottom-12 md:right-14 rounded-2xl cursor-pointer"
       style={{ gap: '1px' }}
       onClick={handleScrollToTop}
     >

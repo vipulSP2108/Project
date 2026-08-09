@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const dir = path.join(__dirname, 'src', 'assets', 'images');
+const dir = path.join(__dirname, 'src', 'assets', 'skills');
 const files = fs.readdirSync(dir).filter(f => f.endsWith('.svg') && f !== 'sprite.svg');
 
 let symbols = [];

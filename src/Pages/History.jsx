@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import Work from './Work';
-import OutsIIT from '../assets/OutsIIT.png';
-import imageMy from '../assets/My.jpg';
-import MoboDashboard from '../assets/MoboDashboard.png';
+import OutsIIT from '../assets/projects/OutsIIT.png';
+import imageMy from '../assets/profile/My.jpg';
+import MoboDashboard from '../assets/projects/MoboDashboard.png';
 import './Home.css';
 import WorkMobo from './WorkMobo';
 import { GlobalStateContext } from '../Context/GlobalStateProvider';

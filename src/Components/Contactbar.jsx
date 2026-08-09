@@ -35,7 +35,7 @@ const ContactInfo = [
 
 export default function Contactbar() {
     return (
-        <div className='fixed z-50 bottom-12 left-14 ' style={{ gap: '1px' }}>
+        <div className='fixed z-[10000] bottom-12 left-14 ' style={{ gap: '1px' }}>
             {ContactInfo.map((item, index) => {
                 const IconComponent = iconMap[item.iconName];
                 return (

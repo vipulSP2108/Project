@@ -1,16 +1,16 @@
-import OutsIIT from '../assets/OutsIIT.png';
-import RentHouse from '../assets/RentHouse.png';
-import Reef from '../assets/Reef.png';
-import SparshBhashi from '../assets/SparshBhashi.png';
-import Cities from '../assets/Cities.png';
-import GuestHouse from '../assets/GuestHouse2.png';
-import Suduko from '../assets/Suduko.png';
-import Colab from '../assets/Colab.png';
-import Eii from '../assets/Eii.png';
-import ESummit from '../assets/ESummit.png';
-import BanaoHumm from '../assets/BanaoHumm3.png';
-import Portfolio from '../assets/Portfolio.png';
-import OnlineBubbleGame from '../assets/OnlineBubbleGame.png';
+import OutsIIT from '../assets/projects/OutsIIT.png';
+import RentHouse from '../assets/projects/RentHouse.png';
+import Reef from '../assets/projects/Reef.png';
+import SparshBhashi from '../assets/projects/SparshBhashi.png';
+import Cities from '../assets/projects/Cities.png';
+import GuestHouse from '../assets/projects/GuestHouse2.png';
+import Suduko from '../assets/projects/Suduko.png';
+import Colab from '../assets/projects/Colab.png';
+import Eii from '../assets/projects/Eii.png';
+import ESummit from '../assets/projects/ESummit.png';
+import BanaoHumm from '../assets/projects/BanaoHumm3.png';
+import Portfolio from '../assets/projects/Portfolio.png';
+import OnlineBubbleGame from '../assets/projects/OnlineBubbleGame.png';
 
 export const gallaryDataSample = [
     {
