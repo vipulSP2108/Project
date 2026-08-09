@@ -11,7 +11,7 @@ import { gallaryDataSample } from '../Data/GallaryData';
 
 export default function Projects3D() {
     return (
-        <div className="z-30 flex flex-col justify-center h-screen w-full overflow-hidden bg-[#111111]">
+        <div className="z-30 flex flex-col justify-center h-screen w-full overflow-hidden bg-[#171C24]">
             <div className="w-full flex items-center mb-12 px-4 md:px-24">
                 {/* <span style={{ fontFamily: 'Montserrat' }} className='uppercase text-[#888888] text-base md:text-2xl'>Featured Projects</span> */}
             </div>
