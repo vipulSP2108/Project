@@ -9,7 +9,7 @@
   display: flex;
   flex-wrap: var(--flex-wrap);
   flex-direction: var(--flex-direction);
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .scroller[data-animated="true"][top-bottom="false"] {

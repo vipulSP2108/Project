@@ -11,6 +11,7 @@ import Navbar from "../Components/Navbar";
 import Grid from "./Grid";
 import Movingbar from "../Components/Movingbar";
 import Projects from "./Projects";
+import Projects3D from "./Projects3D";
 import Contactbar from "../Components/Contactbar";
 import About from "./About";
 import Work from "./Work";
@@ -99,7 +100,8 @@ function HomeScreen() {
             <div ref={workRef} >
                 {isTabletOrLaptop ? <Projects2 /> : <Projects2Phone noNavigation={true} textcont={'Explore Work'} sampleData={sampleDataNew} />}
             </div>
-            {isTabletOrLaptop && <Projects />}
+            {/* {isTabletOrLaptop && <Projects />} */}
+            {isTabletOrLaptop && <Projects3D />}
             {/* <Between3/> */}
             {isTabletOrLaptop ? <History /> : <Projects2Phone noNavigation={true} textcont={'History as Devloper'} sampleData={Experience} />}
             <div ref={contactRef} />

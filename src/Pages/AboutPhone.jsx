@@ -25,7 +25,8 @@ export default function AboutPhone() {
         return array;
     };
 
-    const randomizedSkills = shuffleArray([...sampleDataSkills]);
+    const randomizedSkills1 = shuffleArray([...sampleDataSkills]);
+    const randomizedSkills2 = shuffleArray([...sampleDataSkills]);
 
     return (
         <div className='px-6 '>
@@ -71,7 +72,7 @@ export default function AboutPhone() {
                     className='rounded-lg mt-10 h-[15vh] about-techstack'
                     id='glasses'
                 >
-                    <div onClick={() => navigate('/Skills')} className='cursor-pointer p-3 flex justify-end h-full overflow-hidden gap-3'>
+                    <div onClick={() => navigate('/Skills')} className='cursor-pointer p-3 flex justify-end h-full overflow-hidden gap-6'>
                         <div className='z-40 absolute flex flex-col bottom-2 left-2 '>
                             {/* <div className=' text-xl flex gap-1 items-center '>
                                 <text className='text-base text-[#888888] capitalize'>Details </text>
@@ -84,11 +85,11 @@ export default function AboutPhone() {
                             <text style={{ fontFamily: 'Montserrat' }} className=' text-xl font-black -mt-1'>Tech I ♥️</text>
                         </div>
 
-                        <div className=' opacity-90'>
-                            <Scroller items={randomizedSkills} topbottom='true' direction="bottom" speed="slow" />
+                        <div className=' opacity-90 grayscale hover:grayscale-0 transition-all duration-300'>
+                            <Scroller items={randomizedSkills1} topbottom='true' direction="bottom" speed="slow" />
                         </div>
-                        <div className=' opacity-90'>
-                            <Scroller items={sampleDataSkills} topbottom='true' direction="top" speed="slow" />
+                        <div className=' opacity-90 grayscale hover:grayscale-0 transition-all duration-300'>
+                            <Scroller items={randomizedSkills2} topbottom='true' direction="top" speed="slow" />
                         </div>
                     </div>
 

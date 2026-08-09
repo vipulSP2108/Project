@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './Scroller.css'; // Import the CSS file
+import { spriteUrl } from '../Data/sampleDataSkills';
 
 const Scroller = ({ items, direction = 'left', speed = 'fast', topbottom='true' }) => {
   const scrollerRef = useRef(null);
@@ -45,7 +46,9 @@ const Scroller = ({ items, direction = 'left', speed = 'fast', topbottom='true' 
             {/* <div className=' self-center bg-white w-3 h-3 rounded-full' /> */}
            </>
           ) : (
-            <img className='  h-[6vh]' key={index} style={{objectFit: 'contain'}} src={item.logo} alt={item.alt || ''} />
+            <svg key={index} className={`h-[6vh] w-[6vh] mx-auto select-none transition-all duration-300 cursor-pointer ${item.logoBg || ""}`}>
+               <use href={`${spriteUrl}#${item.logoId}`} />
+            </svg>
           )
         )}
       </div>

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Cards from './Cards';
-import { sampleDataSkills } from "../Data/sampleDataSkills";
+import { sampleDataSkills, spriteUrl } from "../Data/sampleDataSkills";
 import { motion } from "framer-motion";
 import { FaInfo } from "react-icons/fa6";
 import { FaInfoCircle } from "react-icons/fa";
@@ -59,7 +59,9 @@ function Skills(props) {
                   <div className="absolute flex flex-col h-full w-[18%] right-0">
                     {sampleDataSkills.filter(item => item.type === type).map((item, index) => (
                       <div key={index} className={`${item.bgColor} flex-grow flex items-center justify-center`}>
-                        <img src={item.logo} alt="Logo" className="h-20 w-20 object-contain mx-auto select-none pointer-events-none" />
+                        <svg className={`h-16 w-16 mx-auto select-none pointer-events-none ${item.logoBg || ""}`}>
+                           <use href={`${spriteUrl}#${item.logoId}`} />
+                        </svg>
                       </div>
                     ))}
                   </div>

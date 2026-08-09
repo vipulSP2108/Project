@@ -15,6 +15,7 @@ export default function Work({ imgSources, projectList, noImage = false, noNavig
     const preview1Ref = useRef(null);
     const preview2Ref = useRef(null);
     const priviewRef = useRef(null);
+    const [isMenuHovered, setIsMenuHovered] = useState(false);
 
     const navigate = useNavigate();
 
@@ -171,19 +172,23 @@ export default function Work({ imgSources, projectList, noImage = false, noNavig
         <div id='containors'>
             {
                 !noImage &&
-                <div ref={priviewRef} id="priview"
-                    style={{
-                        backgroundColor: 'white',
-                        top: cursorPosition.y,
-                        left: cursorPosition.x,
-                    }}
-                >
+                    <div ref={priviewRef} id="priview"
+                        className={`pointer-events-none ${isMenuHovered ? 'grayscale-0' : 'grayscale'}`}
+                        style={{
+                            backgroundColor: 'white',
+                            top: cursorPosition.y,
+                            left: cursorPosition.x,
+                            transition: 'filter 300ms ease',
+                        }}
+                    >
                     <div className='priviewimg priviewimg1' ref={preview1Ref}></div>
                     <div className='priviewimg priviewimg2' ref={preview2Ref}></div>
                 </div>
             }
 
             <div ref={menuRef} id='menu'
+                onMouseEnter={() => setIsMenuHovered(true)}
+                onMouseLeave={() => setIsMenuHovered(false)}
             // style={{
             //     padding:'0 4em',
             // }}

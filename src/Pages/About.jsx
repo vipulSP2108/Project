@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react'
 import '../App.css';
 import imageMy from '../assets/My4.jpg';
-import html from '../assets/html.png';
-import javascriptweb from '../assets/javascriptweb.png';
-import react from '../assets/react.png';
-import tailwindcss from '../assets/tailwindcss.svg';
+import html from '../assets/images/html-5-logo-svg-1.svg';
+import javascriptweb from '../assets/images/javascript-1.svg';
+import react from '../assets/images/react-native.svg';
+import tailwindcss from '../assets/images/tailwindcss.svg';
 import Scroller from './Scroller';
 import gsap from "gsap";
 
@@ -69,7 +69,8 @@ export default function About() {
         return array;
     };
 
-    const randomizedSkills = shuffleArray([...sampleDataSkills]);
+    const randomizedSkills1 = shuffleArray([...sampleDataSkills]);
+    const randomizedSkills2 = shuffleArray([...sampleDataSkills]);
 
     const containerRef = useRef(null);
 
@@ -189,7 +190,7 @@ export default function About() {
                             className='rounded-2xl w-[70%] h-[40vh] about-techstack'
                             id='glasses'
                         >
-                            <div onClick={() => handleClick()} className='cursor-pointer p-3 flex justify-end h-full overflow-hidden gap-3'>
+                            <div onClick={() => handleClick()} className='cursor-pointer p-3 flex justify-end h-full overflow-hidden gap-6'>
                                 <div className='z-40 absolute flex flex-col bottom-2 left-2 '>
                                     <div className=' text-xl flex gap-1 items-center '>
                                         <text className=' text-[#888888] capitalize'>Details </text>
@@ -202,11 +203,11 @@ export default function About() {
                                     <text style={{ fontFamily: 'Montserrat' }} className=' font-black'>Tech I ♥️</text>
                                 </div>
 
-                                <div className=' opacity-90'>
-                                    <Scroller items={randomizedSkills} topbottom='true' direction="bottom" speed="slow" />
+                                <div className=' opacity-90 grayscale hover:grayscale-0 transition-all duration-300'>
+                                    <Scroller items={randomizedSkills1} topbottom='true' direction="bottom" speed="slow" />
                                 </div>
-                                <div className=' opacity-90'>
-                                    <Scroller items={sampleDataSkills} topbottom='true' direction="top" speed="slow" />
+                                <div className=' opacity-90 grayscale hover:grayscale-0 transition-all duration-300'>
+                                    <Scroller items={randomizedSkills2} topbottom='true' direction="top" speed="slow" />
                                 </div>
                             </div>
 

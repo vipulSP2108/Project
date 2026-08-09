@@ -1,233 +1,214 @@
 import React from 'react';
 
-import css from '../assets/images/css.png';
-import css2 from '../assets/images/css2.png';
-import tailwindcss from '../assets/images/tailwindcss.svg';
-import javascriptweb from '../assets/images/javascriptweb.png';
-import threejs from '../assets/images/three.png';
-import gsap from '../assets/images/gsap.png';
-import javascript from '../assets/images/javascript.png';
-import verilog_basys from '../assets/images/verilog_basys.png';
-import githubdesktop from '../assets/images/githubdesktop.png';
+// We import the single SVG sprite that contains all icons
+import sprite from '../assets/images/sprite.svg?url';
 
-// Import logos for missing skills
-import c from '../assets/images/c.png';
-import cpp from '../assets/images/cpp.png';
-import python from '../assets/images/python.png';
-import html from '../assets/images/html.png';
-import react from '../assets/images/react.png';
-import arduino from '../assets/images/arduino.png';
-import git from '../assets/images/git.png';
-import github from '../assets/images/github.png';
-import matlab from '../assets/images/matlab.png';
-import autodesk_inventor from '../assets/images/autodesk_inventor.png';
-import tinkercad from '../assets/images/tinkercad.png';
-import canva from '../assets/images/canva.png';
-import blender from '../assets/images/blender.png';
-
+// Export the sprite URL so components can use it
+export const spriteUrl = sprite;
 
 export const sampleDataSkills = [
 
     // Programming Languages
     {
         type: "Programming Language",
-        logo: c,
+        logoId: "c",
         logoName: "C",
         logoLink: "www.C.com",
-        bgColor: "bg-[#3849AB]", // bg-gradient-to-r from-[#00599C] to-[#d3e9f5]
+        bgColor: "bg-[#3849AB]",
         textColor_first: "text-white",
         textColor_second: "text-zinc-150",
+        logoBg: "",
     },
     {
         type: "Programming Language",
-        logo: cpp,
-        logoName: "C++",
-        logoLink: "www.Cpp.com",
-        bgColor: "bg-[#01549d]", // bg-gradient-to-r from-[#00599C] to-[#d3e9f5]
-        textColor_first: "text-white",
-        textColor_second: "text-zinc-150",
-    },
-    {
-        type: "Programming Language",
-        logo: python,
+        logoId: "python-5",
         logoName: "Python",
         logoLink: "www.Python.com",
-        bgColor: "bg-[#0076bc]", // bg-gradient-to-r from-[#306998] to-[#ffd43b]
+        bgColor: "bg-[#0076bc]",
         textColor_first: "text-white",
         textColor_second: "text-zinc-950",
+        logoBg: "",
     },
     {
         type: "Programming Language",
-        logo: javascript,
+        logoId: "javascript-1",
         logoName: "JavaScript",
         logoLink: "www.JavaScript.com",
-        bgColor: "bg-yellow-400", // bg-gradient-to-r from-[#f7df1e] to-[#ffe784]
+        bgColor: "bg-yellow-400",
         textColor_first: "text-white",
         textColor_second: "text-zinc-950",
+        logoBg: "",
     },
 
     // FrontEnd
     {
         type: "FrontEnd",
-        logo: html,
+        logoId: "html-5-logo-svg-1",
         logoName: "HTML",
         logoLink: "www.HTML.com",
-        bgColor: "bg-orange-500", // bg-gradient-to-r from-[#e34c26] to-[#f06529]
+        bgColor: "bg-orange-500",
         textColor_first: "text-white",
         textColor_second: "text-zinc-950",
+        logoBg: "",
     },
     {
         type: "FrontEnd",
-        logo: css2,
+        logoId: "css10",
         logoName: "CSS",
         logoLink: "www.CSS.com",
-        bgColor: "bg-[#1f62ae]", // bg-gradient-to-r from-[#264de4] to-[#2965f1]
+        bgColor: "bg-[#1f62ae]",
         textColor_first: "text-white",
         textColor_second: "text-zinc-950",
+        logoBg: "",
     },
     {
         type: "FrontEnd",
-        logo: tailwindcss,
+        logoId: "tailwindcss",
         logoName: "Tailwind CSS",
         logoLink: "www.TailwindCSS.com",
         bgColor: "bg-[#20afba]",
         textColor_first: "text-white",
         textColor_second: "text-zinc-950",
+        logoBg: "",
     },
     {
         type: "FrontEnd",
-        logo: javascriptweb,
+        logoId: "javascript-1",
         logoName: "JavaScript",
         logoLink: "www.JavaScript.com",
         bgColor: "bg-[#63a715]",
         textColor_first: "text-white",
         textColor_second: "text-zinc-950",
+        logoBg: "",
     },
     {
         type: "FrontEnd",
-        logo: threejs,
+        logoId: "three",
         logoName: "Three.js",
         logoLink: "www.Threejs.org",
         bgColor: "bg-purple-500",
         textColor_first: "text-white",
         textColor_second: "text-zinc-950",
+        logoBg: "dark:bg-white bg-white/50 rounded-md p-1",
     },
     {
         type: "FrontEnd",
-        logo: gsap,
+        logoId: "gsap",
         logoName: "GSAP",
         logoLink: "www.GSAP.com",
         bgColor: "bg-[#82c500]",
         textColor_first: "text-white",
         textColor_second: "text-zinc-950",
+        logoBg: "dark:bg-white bg-white/50 rounded-full p-1",
     },
     {
         type: "FrontEnd",
-        logo: react,
+        logoId: "react-native",
         logoName: "React",
         logoLink: "www.React.com",
-        bgColor: "bg-[#69d8fa]", // bg-gradient-to-r from-[#61dafb] to-[#6dd5fa]
+        bgColor: "bg-[#69d8fa]",
         textColor_first: "text-white",
         textColor_second: "text-zinc-950",
+        logoBg: "",
     },
 
-    // Embedded System verilog_basy
+    // Embedded System
     {
         type: "Embedded System",
-        logo: arduino,
+        logoId: "arduino",
         logoName: "Arduino",
         logoLink: "www.Arduino.com",
-        bgColor: "bg-teal-500", // bg-gradient-to-r from-[#00979d] to-[#00c3cb]
+        bgColor: "bg-teal-500",
         textColor_first: "text-white",
         textColor_second: "text-zinc-950",
+        logoBg: "",
     },
     {
         type: "Embedded System",
-        logo: verilog_basys,
+        logoId: "verilog_basys",
         logoName: "Verilog_Basys",
         logoLink: "www.verilogbasys.com",
-        bgColor: "bg-orange-500", // bg-gradient-to-r from-[#3b82f6] to-[#93c5fd]
+        bgColor: "bg-orange-500",
         textColor_first: "text-white",
         textColor_second: "text-zinc-950",
+        logoBg: "",
     },
 
     // Version Control
     {
         type: "Version Control",
-        logo: git,
+        logoId: "git-icon",
         logoName: "Git",
         logoLink: "www.Git.com",
-        bgColor: "bg-[#f04f32]", // bg-gradient-to-r from-[#f34f29] to-[#f7a8a5]
+        bgColor: "bg-[#f04f32]",
         textColor_first: "text-white",
         textColor_second: "text-zinc-950",
+        logoBg: "",
     },
     {
         type: "Version Control",
-        logo: github,
+        logoId: "github-icon-2",
         logoName: "Github",
         logoLink: "www.Github.com",
-        bgColor: "bg-gray-900", // bg-gradient-to-r from-[#181717] to-[#333333]
+        bgColor: "bg-gray-900",
         textColor_first: "text-white",
         textColor_second: "text-zinc-150",
-    },
-    {
-        type: "Version Control",
-        logo: githubdesktop,
-        logoName: "GitHub Desktop",
-        logoLink: "www.desktop.github.com",
-        bgColor: "bg-[#9b59b6]", // Light purple color
-        textColor_first: "text-white",
-        textColor_second: "text-gray-800" // Adjusted for better readability
+        logoBg: "dark:bg-white bg-white/50 rounded-full p-1",
     },
 
     // Numerical Computing
     {
         type: "Numerical Computing",
-        logo: matlab,
+        logoId: "matlab",
         logoName: "MATLAB",
         logoLink: "www.Matlab.com",
-        bgColor: "bg-blue-800", // bg-gradient-to-r from-[#0076a8] to-[#00aaff]
+        bgColor: "bg-blue-800",
         textColor_first: "text-white",
         textColor_second: "text-zinc-950",
+        logoBg: "",
     },
 
     // Tools
     {
         type: "Tool",
-        logo: autodesk_inventor,
+        logoId: "autodesk_inventor",
         logoName: "Autodesk Inventor",
         logoLink: "www.Autodesk.com",
-        bgColor: "bg-yellow-700", // bg-gradient-to-r from-[#0696d7] to-[#00c3cb]
+        bgColor: "bg-yellow-700",
         textColor_first: "text-white",
         textColor_second: "text-zinc-950",
+        logoBg: "dark:bg-white bg-white/50 rounded-full p-1",
     },
     {
         type: "Tool",
-        logo: tinkercad,
+        logoId: "tinkercad-1",
         logoName: "Tinkercad",
         logoLink: "www.Tinkercad.com",
-        bgColor: "bg-green-500", // bg-gradient-to-r from-[#ff6f00] to-[#ffab00]
+        bgColor: "bg-green-500",
         textColor_first: "text-white",
         textColor_second: "text-zinc-950",
+        logoBg: "",
     },
 
     // Design
     {
         type: "Design",
-        logo: canva,
+        logoId: "canva",
         logoName: "Canva",
         logoLink: "www.Canva.com",
-        bgColor: "bg-blue-700", // bg-gradient-to-r from-[#00c4cc] to-[#00e1ff]
+        bgColor: "bg-blue-700",
         textColor_first: "text-white",
         textColor_second: "text-zinc-150",
+        logoBg: "",
     },
     {
         type: "Design",
-        logo: blender,
+        logoId: "blender",
         logoName: "Blender",
         logoLink: "www.Blender.com",
-        bgColor: "bg-orange-500", // bg-gradient-to-r from-[#f5792a] to-[#ff9d3f]
+        bgColor: "bg-orange-500",
         textColor_first: "text-white",
         textColor_second: "text-zinc-950",
+        logoBg: "",
     }
 ];

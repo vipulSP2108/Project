@@ -1,6 +1,6 @@
-
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { spriteUrl } from "../Data/sampleDataSkills";
 
 
 const Cards = (props, index) => {
@@ -29,7 +29,9 @@ const Cards = (props, index) => {
       
       <div className="h-full w-full">
         <div className={`h-[82%] flex flex-col justify-center ${isFlipped ? 'hidden' : 'block'}`}>
-          <img src={props.data.logo} alt="Logo" className=" h-20 w-20 object-contain mx-auto select-none pointer-events-none" />
+          <svg className={`h-16 w-16 mx-auto select-none pointer-events-none ${props.data.logoBg || ""}`}>
+             <use href={`${spriteUrl}#${props.data.logoId}`} />
+          </svg>
           <div className="text-center">{props.data.logoName}</div>
         </div>
         {console.log(index)}
@@ -39,7 +41,9 @@ const Cards = (props, index) => {
 
         <div className={`back-face h-full w-full flex flex-col  justify-center ${isFlipped ? 'block' : 'hidden'}`} style={{ transform: "rotateY(180deg)" }}>
           <div className={`h-[30%] w-full bg-zinc-100/20 flex items-center `}>
-            <img src={props.data.logo} alt="Logo" className=" h-16 w-16 object-contain mx-auto select-none pointer-events-none" />
+            <svg className={`h-12 w-12 mx-auto select-none pointer-events-none ${props.data.logoBg || ""}`}>
+               <use href={`${spriteUrl}#${props.data.logoId}`} />
+            </svg>
           </div>
           <div className={` w-full h-[18%] flex ${props.data.bgColor} ${props.data.textColor_second} justify-center font-semibold items-center`}>
             <div className="text-center">{props.data.logoName}</div>
